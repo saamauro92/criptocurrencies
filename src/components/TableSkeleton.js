@@ -1,324 +1,324 @@
 const TableSkeleton = () => {
     return (
         <>
-            <table cellpadding="0" cellspacing="0" class="table_loader ">
+            <table cellPadding="0" cellSpacing="0" className="table_loader ">
                 <tr>
-                    <th class="col1">
+                    <th className="col1">
                         <span></span>
                     </th>
-                    <th class="col4">
+                    <th className="col4">
                         <span></span>
                     </th>
-                    <th class="col5">
+                    <th className="col5">
                         <span></span>
                     </th>
-                    <th class="col5">
+                    <th className="col5">
                         <span></span>
                     </th>
-                    <th class="col5">
+                    <th className="col5">
                         <span></span>
                     </th>
-                    <th class="col5">
+                    <th className="col5">
                         <span></span>
                     </th>
-                    <th class="col5">
+                    <th className="col5">
                         <span></span>
                     </th>
-                    <th class="col5">
+                    <th className="col5">
                         <span></span>
                     </th>
-                    <th class="col5">
+                    <th className="col5">
                         <span></span>
                     </th>
                 </tr>
                 <tr>
-                    <td class="col1">
+                    <td className="col1">
                         <span></span>
                     </td>
-                    <td class="col4">
+                    <td className="col4">
                         <span></span>
-                        <span class="sub-temp"></span>
-                        <span class="sub-temp sub-temp-three"></span>
+                        <span className="sub-temp"></span>
+                        <span className="sub-temp sub-temp-three"></span>
                     </td>
-                    <td class="col5">
-                        <span></span>
-                    </td>
-                    <td class="col4">
-                        <span></span>
-                        <span class="sub-temp"></span>
-                        <span class="sub-temp sub-temp-three"></span>
-                    </td>
-                    <td class="col5">
+                    <td className="col5">
                         <span></span>
                     </td>
-                    <td class="col4">
+                    <td className="col4">
                         <span></span>
-                        <span class="sub-temp"></span>
-                        <span class="sub-temp sub-temp-three"></span>
+                        <span className="sub-temp"></span>
+                        <span className="sub-temp sub-temp-three"></span>
                     </td>
-                    <td class="col5">
-                        <span></span>
-                    </td>
-                    <td class="col4">
-                        <span></span>
-                        <span class="sub-temp"></span>
-                        <span class="sub-temp sub-temp-three"></span>
-                    </td>
-                    <td class="col5">
+                    <td className="col5">
                         <span></span>
                     </td>
-                </tr>
-                <tr>
-                    <td class="col1">
+                    <td className="col4">
+                        <span></span>
+                        <span className="sub-temp"></span>
+                        <span className="sub-temp sub-temp-three"></span>
+                    </td>
+                    <td className="col5">
                         <span></span>
                     </td>
-                    <td class="col4">
+                    <td className="col4">
                         <span></span>
-                        <span class="sub-temp"></span>
-                        <span class="sub-temp sub-temp-three"></span>
+                        <span className="sub-temp"></span>
+                        <span className="sub-temp sub-temp-three"></span>
                     </td>
-                    <td class="col5">
-                        <span></span>
-                    </td>
-                    <td class="col1">
-                        <span></span>
-                    </td>
-                    <td class="col4">
-                        <span></span>
-                        <span class="sub-temp"></span>
-                        <span class="sub-temp sub-temp-three"></span>
-                    </td>
-                    <td class="col5">
-                        <span></span>
-                    </td>
-                    <td class="col1">
-                        <span></span>
-                    </td>
-                    <td class="col4">
-                        <span></span>
-                        <span class="sub-temp"></span>
-                        <span class="sub-temp sub-temp-three"></span>
-                    </td>
-                    <td class="col5">
-                        <span></span>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td class="col1">
-                        <span></span>
-                    </td>
-                    <td class="col4">
-                        <span></span>
-                        <span class="sub-temp"></span>
-                        <span class="sub-temp sub-temp-three"></span>
-                    </td>
-                    <td class="col5">
-                        <span></span>
-                    </td>
-                    <td class="col4">
-                        <span></span>
-                        <span class="sub-temp"></span>
-                        <span class="sub-temp sub-temp-three"></span>
-                    </td>
-                    <td class="col5">
-                        <span></span>
-                    </td>
-                    <td class="col4">
-                        <span></span>
-                        <span class="sub-temp"></span>
-                        <span class="sub-temp sub-temp-three"></span>
-                    </td>
-                    <td class="col5">
-                        <span></span>
-                    </td>
-                    <td class="col4">
-                        <span></span>
-                        <span class="sub-temp"></span>
-                        <span class="sub-temp sub-temp-three"></span>
-                    </td>
-                    <td class="col5">
+                    <td className="col5">
                         <span></span>
                     </td>
                 </tr>
                 <tr>
-                    <td class="col1">
+                    <td className="col1">
                         <span></span>
                     </td>
-                    <td class="col4">
+                    <td className="col4">
                         <span></span>
-                        <span class="sub-temp"></span>
-                        <span class="sub-temp sub-temp-three"></span>
+                        <span className="sub-temp"></span>
+                        <span className="sub-temp sub-temp-three"></span>
                     </td>
-                    <td class="col5">
-                        <span></span>
-                    </td>
-                    <td class="col1">
+                    <td className="col5">
                         <span></span>
                     </td>
-                    <td class="col4">
-                        <span></span>
-                        <span class="sub-temp"></span>
-                        <span class="sub-temp sub-temp-three"></span>
-                    </td>
-                    <td class="col5">
+                    <td className="col1">
                         <span></span>
                     </td>
-                    <td class="col1">
+                    <td className="col4">
+                        <span></span>
+                        <span className="sub-temp"></span>
+                        <span className="sub-temp sub-temp-three"></span>
+                    </td>
+                    <td className="col5">
                         <span></span>
                     </td>
-                    <td class="col4">
+                    <td className="col1">
                         <span></span>
-                        <span class="sub-temp"></span>
-                        <span class="sub-temp sub-temp-three"></span>
                     </td>
-                    <td class="col5">
+                    <td className="col4">
+                        <span></span>
+                        <span className="sub-temp"></span>
+                        <span className="sub-temp sub-temp-three"></span>
+                    </td>
+                    <td className="col5">
                         <span></span>
                     </td>
                 </tr>
 
                 <tr>
-                    <td class="col1">
+                    <td className="col1">
                         <span></span>
                     </td>
-                    <td class="col4">
+                    <td className="col4">
                         <span></span>
-                        <span class="sub-temp"></span>
-                        <span class="sub-temp sub-temp-three"></span>
+                        <span className="sub-temp"></span>
+                        <span className="sub-temp sub-temp-three"></span>
                     </td>
-                    <td class="col5">
-                        <span></span>
-                    </td>
-                    <td class="col4">
-                        <span></span>
-                        <span class="sub-temp"></span>
-                        <span class="sub-temp sub-temp-three"></span>
-                    </td>
-                    <td class="col5">
+                    <td className="col5">
                         <span></span>
                     </td>
-                    <td class="col4">
+                    <td className="col4">
                         <span></span>
-                        <span class="sub-temp"></span>
-                        <span class="sub-temp sub-temp-three"></span>
+                        <span className="sub-temp"></span>
+                        <span className="sub-temp sub-temp-three"></span>
                     </td>
-                    <td class="col5">
+                    <td className="col5">
                         <span></span>
                     </td>
-                    <td class="col4">
+                    <td className="col4">
                         <span></span>
-                        <span class="sub-temp"></span>
-                        <span class="sub-temp sub-temp-three"></span>
+                        <span className="sub-temp"></span>
+                        <span className="sub-temp sub-temp-three"></span>
                     </td>
-                    <td class="col5">
+                    <td className="col5">
+                        <span></span>
+                    </td>
+                    <td className="col4">
+                        <span></span>
+                        <span className="sub-temp"></span>
+                        <span className="sub-temp sub-temp-three"></span>
+                    </td>
+                    <td className="col5">
                         <span></span>
                     </td>
                 </tr>
                 <tr>
-                    <td class="col1">
+                    <td className="col1">
                         <span></span>
                     </td>
-                    <td class="col4">
+                    <td className="col4">
                         <span></span>
-                        <span class="sub-temp"></span>
-                        <span class="sub-temp sub-temp-three"></span>
+                        <span className="sub-temp"></span>
+                        <span className="sub-temp sub-temp-three"></span>
                     </td>
-                    <td class="col5">
-                        <span></span>
-                    </td>
-                    <td class="col1">
+                    <td className="col5">
                         <span></span>
                     </td>
-                    <td class="col4">
-                        <span></span>
-                        <span class="sub-temp"></span>
-                        <span class="sub-temp sub-temp-three"></span>
-                    </td>
-                    <td class="col5">
+                    <td className="col1">
                         <span></span>
                     </td>
-                    <td class="col1">
+                    <td className="col4">
+                        <span></span>
+                        <span className="sub-temp"></span>
+                        <span className="sub-temp sub-temp-three"></span>
+                    </td>
+                    <td className="col5">
                         <span></span>
                     </td>
-                    <td class="col4">
+                    <td className="col1">
                         <span></span>
-                        <span class="sub-temp"></span>
-                        <span class="sub-temp sub-temp-three"></span>
                     </td>
-                    <td class="col5">
+                    <td className="col4">
+                        <span></span>
+                        <span className="sub-temp"></span>
+                        <span className="sub-temp sub-temp-three"></span>
+                    </td>
+                    <td className="col5">
                         <span></span>
                     </td>
                 </tr>
 
                 <tr>
-                    <td class="col1">
+                    <td className="col1">
                         <span></span>
                     </td>
-                    <td class="col4">
+                    <td className="col4">
                         <span></span>
-                        <span class="sub-temp"></span>
-                        <span class="sub-temp sub-temp-three"></span>
+                        <span className="sub-temp"></span>
+                        <span className="sub-temp sub-temp-three"></span>
                     </td>
-                    <td class="col5">
-                        <span></span>
-                    </td>
-                    <td class="col4">
-                        <span></span>
-                        <span class="sub-temp"></span>
-                        <span class="sub-temp sub-temp-three"></span>
-                    </td>
-                    <td class="col5">
+                    <td className="col5">
                         <span></span>
                     </td>
-                    <td class="col4">
+                    <td className="col4">
                         <span></span>
-                        <span class="sub-temp"></span>
-                        <span class="sub-temp sub-temp-three"></span>
+                        <span className="sub-temp"></span>
+                        <span className="sub-temp sub-temp-three"></span>
                     </td>
-                    <td class="col5">
+                    <td className="col5">
                         <span></span>
                     </td>
-                    <td class="col4">
+                    <td className="col4">
                         <span></span>
-                        <span class="sub-temp"></span>
-                        <span class="sub-temp sub-temp-three"></span>
+                        <span className="sub-temp"></span>
+                        <span className="sub-temp sub-temp-three"></span>
                     </td>
-                    <td class="col5">
+                    <td className="col5">
+                        <span></span>
+                    </td>
+                    <td className="col4">
+                        <span></span>
+                        <span className="sub-temp"></span>
+                        <span className="sub-temp sub-temp-three"></span>
+                    </td>
+                    <td className="col5">
                         <span></span>
                     </td>
                 </tr>
                 <tr>
-                    <td class="col1">
+                    <td className="col1">
                         <span></span>
                     </td>
-                    <td class="col4">
+                    <td className="col4">
                         <span></span>
-                        <span class="sub-temp"></span>
-                        <span class="sub-temp sub-temp-three"></span>
+                        <span className="sub-temp"></span>
+                        <span className="sub-temp sub-temp-three"></span>
                     </td>
-                    <td class="col5">
-                        <span></span>
-                    </td>
-                    <td class="col1">
+                    <td className="col5">
                         <span></span>
                     </td>
-                    <td class="col4">
-                        <span></span>
-                        <span class="sub-temp"></span>
-                        <span class="sub-temp sub-temp-three"></span>
-                    </td>
-                    <td class="col5">
+                    <td className="col1">
                         <span></span>
                     </td>
-                    <td class="col1">
+                    <td className="col4">
+                        <span></span>
+                        <span className="sub-temp"></span>
+                        <span className="sub-temp sub-temp-three"></span>
+                    </td>
+                    <td className="col5">
                         <span></span>
                     </td>
-                    <td class="col4">
+                    <td className="col1">
                         <span></span>
-                        <span class="sub-temp"></span>
-                        <span class="sub-temp sub-temp-three"></span>
                     </td>
-                    <td class="col5">
+                    <td className="col4">
+                        <span></span>
+                        <span className="sub-temp"></span>
+                        <span className="sub-temp sub-temp-three"></span>
+                    </td>
+                    <td className="col5">
+                        <span></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td className="col1">
+                        <span></span>
+                    </td>
+                    <td className="col4">
+                        <span></span>
+                        <span className="sub-temp"></span>
+                        <span className="sub-temp sub-temp-three"></span>
+                    </td>
+                    <td className="col5">
+                        <span></span>
+                    </td>
+                    <td className="col4">
+                        <span></span>
+                        <span className="sub-temp"></span>
+                        <span className="sub-temp sub-temp-three"></span>
+                    </td>
+                    <td className="col5">
+                        <span></span>
+                    </td>
+                    <td className="col4">
+                        <span></span>
+                        <span className="sub-temp"></span>
+                        <span className="sub-temp sub-temp-three"></span>
+                    </td>
+                    <td className="col5">
+                        <span></span>
+                    </td>
+                    <td className="col4">
+                        <span></span>
+                        <span className="sub-temp"></span>
+                        <span className="sub-temp sub-temp-three"></span>
+                    </td>
+                    <td className="col5">
+                        <span></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td className="col1">
+                        <span></span>
+                    </td>
+                    <td className="col4">
+                        <span></span>
+                        <span className="sub-temp"></span>
+                        <span className="sub-temp sub-temp-three"></span>
+                    </td>
+                    <td className="col5">
+                        <span></span>
+                    </td>
+                    <td className="col1">
+                        <span></span>
+                    </td>
+                    <td className="col4">
+                        <span></span>
+                        <span className="sub-temp"></span>
+                        <span className="sub-temp sub-temp-three"></span>
+                    </td>
+                    <td className="col5">
+                        <span></span>
+                    </td>
+                    <td className="col1">
+                        <span></span>
+                    </td>
+                    <td className="col4">
+                        <span></span>
+                        <span className="sub-temp"></span>
+                        <span className="sub-temp sub-temp-three"></span>
+                    </td>
+                    <td className="col5">
                         <span></span>
                     </td>
                 </tr>
