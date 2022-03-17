@@ -1,4 +1,3 @@
-
 export const MoneyFormat = (number) => {
   // Nine Zeroes for Billions
   return Math.abs(Number(number)) >= 1.0e9
@@ -11,9 +10,6 @@ export const MoneyFormat = (number) => {
         ? Math.abs(Number(number)) / 1.0e3 + "K"
         : Math.abs(Number(number));
 };
-
-
-
 
 export const historyOptions = {
   lineHeightAnnotation: {
@@ -30,33 +26,24 @@ export const historyOptions = {
   responsive: true,
   plugins: {
     tooltip: {
-      backgroundColor: '#333',
-      padding: '10',
-
+      backgroundColor: "#333",
+      padding: "10",
     },
-
-
   },
   interaction: {
     intersect: false,
-    mode: 'index',
+    mode: "index",
   },
   scales: {
     x: {
       ticks: {
-        source: "data"
+        source: "data",
       },
-      type: 'time',
+      type: "time",
       time: {
         unit: "day",
-
-
-      }
+      },
     },
-    y: {
-
-
-    }
+    y: {},
   },
-
 };
