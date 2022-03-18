@@ -28,35 +28,35 @@ const Main = () => {
                 <TableSkeleton />
             ) : (
                 <table className="table">
-                    <tr>
-                        <th> #</th>
-                        <th> Coin</th>
-                        <th> Price </th>
-                        <th> 1h </th>
-                        <th> 24h </th>
-                        <th> 7d </th>
-                        <th> Volume (24hs) </th>
-                        <th> Market Cap </th>
-                        <th className="td-chart"> Last 7 days </th>
-                    </tr>
+                    <tbody>
+                        <tr>
+                            <th> #</th>
+                            <th> Coin</th>
+                            <th> Price </th>
+                            <th> 1h </th>
+                            <th> 24h </th>
+                            <th> 7d </th>
+                            <th> Volume (24hs) </th>
+                            <th> Market Cap </th>
+                            <th className="td-chart"> Last 7 days </th>
+                        </tr>
 
-                    {loading ? (
-                        <LoadingBox></LoadingBox>
-                    ) : error ? (
-                        <div>{error.message} </div>
-                    ) : (
-                        cryptos.slice(0, 100).map((item) => (
-                            <tr key={item.market_cap_rank}>
-                                {!item.market_cap_rank || item.market_cap_rank === null ? (
-                                    <td>
-                                        {" "}
-                                        <p> ... </p>{" "}
-                                    </td>
-                                ) : (
-                                    <td> {item.market_cap_rank} </td>
-                                )}
+                        {loading ? (
+                            <LoadingBox></LoadingBox>
+                        ) : error ? (
+                            <div>{error.message} </div>
+                        ) : (
+                            cryptos.slice(0, 100).map((item) => (
+                                <tr key={item.market_cap_rank}>
+                                    {!item.market_cap_rank || item.market_cap_rank === null ? (
+                                        <td>
+                                            {" "}
+                                            <p> ... </p>{" "}
+                                        </td>
+                                    ) : (
+                                        <td> {item.market_cap_rank} </td>
+                                    )}
 
-                                <Link to={`/coin/${item.id}`}>
                                     <td>
                                         <div className="td-icon">
                                             <img
@@ -66,147 +66,149 @@ const Main = () => {
                                             />
 
                                             <div>
-                                                <p>{item.name} </p>
+                                                <Link to={`/coin/${item.id}`}>
+                                                    <p>{item.name} </p>
+                                                </Link>
                                             </div>
                                             <div>
                                                 <p> {item.symbol}</p>
                                             </div>
                                         </div>
                                     </td>
-                                </Link>
 
-                                {!item.current_price || item.current_price === null ? (
-                                    <td>
-                                        {" "}
-                                        <p> ? </p>{" "}
-                                    </td>
-                                ) : (
-                                    <td>
-                                        {" "}
-                                        {webCurrency.symbol}
-                                        {item.current_price.toFixed(2)}{" "}
-                                    </td>
-                                )}
-
-                                {!item.price_change_percentage_1h_in_currency ||
-                                    item.price_change_percentage_1h_in_currency === null ? (
-                                    <td>
-                                        {" "}
-                                        <p> ? </p>{" "}
-                                    </td>
-                                ) : (
-                                    <td>
-                                        {" "}
-                                        <p
-                                            style={{
-                                                color:
-                                                    Math.sign(
-                                                        item.price_change_percentage_1h_in_currency
-                                                    ) === -1
-                                                        ? "red"
-                                                        : "green",
-                                            }}
-                                        >
-                                            {item.price_change_percentage_1h_in_currency.toFixed(1)} %{" "}
-                                        </p>{" "}
-                                    </td>
-                                )}
-
-                                {!item.price_change_percentage_24h ||
-                                    item.price_change_percentage_24h === null ? (
-                                    <td>
-                                        {" "}
-                                        <p> ? </p>{" "}
-                                    </td>
-                                ) : (
-                                    <td>
-                                        {" "}
-                                        <p
-                                            style={{
-                                                color:
-                                                    Math.sign(item.price_change_percentage_24h) === -1
-                                                        ? "red"
-                                                        : "green",
-                                            }}
-                                        >
+                                    {!item.current_price || item.current_price === null ? (
+                                        <td>
                                             {" "}
-                                            {item.price_change_percentage_24h.toFixed(1)} %{" "}
-                                        </p>{" "}
-                                    </td>
-                                )}
+                                            <p> ? </p>{" "}
+                                        </td>
+                                    ) : (
+                                        <td>
+                                            {" "}
+                                            {webCurrency.symbol}
+                                            {item.current_price.toFixed(2)}{" "}
+                                        </td>
+                                    )}
 
-                                {!item.price_change_percentage_7d_in_currency ||
-                                    item.price_change_percentage_7d_in_currency === null ? (
-                                    <td>
-                                        {" "}
-                                        <p> ? </p>{" "}
-                                    </td>
-                                ) : (
-                                    <td>
-                                        {" "}
-                                        <p
-                                            style={{
-                                                color:
-                                                    Math.sign(
-                                                        item.price_change_percentage_7d_in_currency
-                                                    ) === -1
-                                                        ? "red"
-                                                        : "green",
-                                            }}
-                                        >
-                                            {item.price_change_percentage_7d_in_currency.toFixed(1)} %{" "}
-                                        </p>{" "}
-                                    </td>
-                                )}
+                                    {!item.price_change_percentage_1h_in_currency ||
+                                        item.price_change_percentage_1h_in_currency === null ? (
+                                        <td>
+                                            {" "}
+                                            <p> ? </p>{" "}
+                                        </td>
+                                    ) : (
+                                        <td>
+                                            {" "}
+                                            <p
+                                                style={{
+                                                    color:
+                                                        Math.sign(
+                                                            item.price_change_percentage_1h_in_currency
+                                                        ) === -1
+                                                            ? "red"
+                                                            : "green",
+                                                }}
+                                            >
+                                                {item.price_change_percentage_1h_in_currency.toFixed(1)} %{" "}
+                                            </p>{" "}
+                                        </td>
+                                    )}
 
-                                {!item.total_volume || item.total_volume === null ? (
-                                    <td>
-                                        {" "}
-                                        <p> ? </p>{" "}
-                                    </td>
-                                ) : (
+                                    {!item.price_change_percentage_24h ||
+                                        item.price_change_percentage_24h === null ? (
+                                        <td>
+                                            {" "}
+                                            <p> ? </p>{" "}
+                                        </td>
+                                    ) : (
+                                        <td>
+                                            {" "}
+                                            <p
+                                                style={{
+                                                    color:
+                                                        Math.sign(item.price_change_percentage_24h) === -1
+                                                            ? "red"
+                                                            : "green",
+                                                }}
+                                            >
+                                                {" "}
+                                                {item.price_change_percentage_24h.toFixed(1)} %{" "}
+                                            </p>{" "}
+                                        </td>
+                                    )}
+
+                                    {!item.price_change_percentage_7d_in_currency ||
+                                        item.price_change_percentage_7d_in_currency === null ? (
+                                        <td>
+                                            {" "}
+                                            <p> ? </p>{" "}
+                                        </td>
+                                    ) : (
+                                        <td>
+                                            {" "}
+                                            <p
+                                                style={{
+                                                    color:
+                                                        Math.sign(
+                                                            item.price_change_percentage_7d_in_currency
+                                                        ) === -1
+                                                            ? "red"
+                                                            : "green",
+                                                }}
+                                            >
+                                                {item.price_change_percentage_7d_in_currency.toFixed(1)} %{" "}
+                                            </p>{" "}
+                                        </td>
+                                    )}
+
+                                    {!item.total_volume || item.total_volume === null ? (
+                                        <td>
+                                            {" "}
+                                            <p> ? </p>{" "}
+                                        </td>
+                                    ) : (
+                                        <td>
+                                            {" "}
+                                            {webCurrency.symbol}
+                                            {item.total_volume.toFixed(1)}{" "}
+                                        </td>
+                                    )}
                                     <td>
                                         {" "}
                                         {webCurrency.symbol}
-                                        {item.total_volume.toFixed(1)}{" "}
+                                        {MoneyFormat(item.market_cap)}{" "}
                                     </td>
-                                )}
-                                <td>
-                                    {" "}
-                                    {webCurrency.symbol}
-                                    {MoneyFormat(item.market_cap)}{" "}
-                                </td>
 
-                                {!item.sparkline_in_7d || item.sparkline_in_7d === null ? (
-                                    <td>
-                                        {" "}
-                                        <p> ? </p>{" "}
-                                    </td>
-                                ) : (
-                                    <td className="td-chart">
-                                        <Sparklines
-                                            data={item.sparkline_in_7d.price}
-                                            limit={200}
-                                            width={15}
-                                            height={5}
-                                            margin={0}
-                                        >
-                                            <SparklinesLine
-                                                style={{ fill: "none", strokeWidth: "0.15" }}
-                                                color={
-                                                    Math.sign(
-                                                        item.price_change_percentage_7d_in_currency
-                                                    ) === -1
-                                                        ? "red"
-                                                        : "green"
-                                                }
-                                            />
-                                        </Sparklines>
-                                    </td>
-                                )}
-                            </tr>
-                        ))
-                    )}
+                                    {!item.sparkline_in_7d || item.sparkline_in_7d === null ? (
+                                        <td>
+                                            {" "}
+                                            <p> ? </p>{" "}
+                                        </td>
+                                    ) : (
+                                        <td className="td-chart">
+                                            <Sparklines
+                                                data={item.sparkline_in_7d.price}
+                                                limit={200}
+                                                width={15}
+                                                height={5}
+                                                margin={0}
+                                            >
+                                                <SparklinesLine
+                                                    style={{ fill: "none", strokeWidth: "0.15" }}
+                                                    color={
+                                                        Math.sign(
+                                                            item.price_change_percentage_7d_in_currency
+                                                        ) === -1
+                                                            ? "red"
+                                                            : "green"
+                                                    }
+                                                />
+                                            </Sparklines>
+                                        </td>
+                                    )}
+                                </tr>
+                            ))
+                        )}
+                    </tbody>
                 </table>
             )}
         </>
