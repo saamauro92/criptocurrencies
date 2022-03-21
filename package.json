@@ -2,6 +2,7 @@
   "name": "criptocurrencies",
   "version": "0.1.0",
   "private": true,
+  "homepage": "./",
   "engines": {
     "node": "16.14.0"
   },
@@ -45,5 +46,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "envify": "^4.1.0",
+    "terser": "^5.12.1",
+    "uglifyify": "^5.0.2"
   }
 }
