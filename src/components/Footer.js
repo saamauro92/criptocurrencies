@@ -3,7 +3,7 @@ import React from "react";
 const Footer = () => {
     return (
         <div className="footer">
-            <p> Written in React JS and CSS</p>
+            <p> This project is built using React JS and CSS with the aim of serving educational purposes.</p>
         </div>
     );
 };
